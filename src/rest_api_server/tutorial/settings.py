@@ -25,7 +25,7 @@ SECRET_KEY = ')x6=fjp$przg0=ir-jpqvx@&4r55cd00@avt!)*=m&j$4rr=dp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["vm142-60.cyverse.org", "128.196.142.60"]
+ALLOWED_HOSTS = ["35.192.5.126", "hackaz.johnxu.xyz"]
 
 
 # Application definition

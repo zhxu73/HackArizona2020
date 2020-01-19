@@ -3,7 +3,7 @@ import requests
 import random
 
 def aa_flight_engine_url():
-    url = "localhost:3030/flights"
+    url = "http://localhost:3030/flights"
     return url
 
 def list_aa_flights():
@@ -26,7 +26,8 @@ def search_aa_flight(date, airport):
     date needs to be in "%Y-%m-%d" format
     date & airport refers to depature
     """
-    url = aa_flight_engine_url() + "?date={}&origin={}".format(date, airport)
+    date_str = date.decode("utf-8")
+    url = aa_flight_engine_url() + "?date={}&origin={}".format(date_str, airport)
     resp = requests.get(url)
 
     try:
