@@ -1,1 +1,5 @@
 # HackArizona2020
+
+This group consists of John Xu, Andrew Taing, and Diego D'Gyves. This repository was used to provide an environment with accessible code for collaboration purposes.
+
+We came into this hackathon without knowing eachother, but in a matter of 36 hours we combined a variety of experience levels, programming knowledge, and academic backgrounds to create a Google application powered by Google Cloud, Django Framework, and a provided American Airlines API to create a unique experience for our user. They simply tell their Google Home Mini, "Hey Google, talk to Mystery Flight, I feel like traveling," and our application provides them with a random (hopefully affordable) flight to a destination unbeknownst to them! Google uses the user's location, with their permission of course, to acquire flight infomration from the nearest airport using the American Airlines API and send them an email with all the information they would need such as dates, destinations, and even airplane models!
