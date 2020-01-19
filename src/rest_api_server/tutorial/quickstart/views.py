@@ -19,11 +19,10 @@ class GoogleAssistantActionViewSet(viewsets.ViewSet):
             json_obj = json.loads(request.body.decode("utf-8"))
         except json.decoder.JSONDecodeError:
             return Response("", status=status.HTTP_400_BAD_REQUEST)
-        #print(json.dumps(json_obj, indent=4, sort_keys=True))
+        print(json.dumps(json_obj, indent=4, sort_keys=True))
 
         try:
-            result = parse_input(json_obj)
-            return Response(dispatch_intent(result["intent"], result))
+            return Response(dispatch_intent(json_obj["queryResult"]["intent"]["displayName"], json_obj))
 
         except Exception as e:
             print(e)
